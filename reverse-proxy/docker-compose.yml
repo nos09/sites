@@ -1,0 +1,13 @@
+version: '3'
+services:
+  proxy:
+    build: ./
+    networks:
+      - ghost
+    ports:
+      - 80:80
+
+networks:
+  ghost:
+    external:
+      name: ghost_default
