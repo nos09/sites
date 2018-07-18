@@ -4,6 +4,7 @@ services:
     build: ./
     networks:
       - ghost
+      - hardikspace
     ports:
       - 80:80
 
@@ -11,3 +12,6 @@ networks:
   ghost:
     external:
       name: ghost_default
+  hardikspace:
+    external:
+      name: hardikspace_default
